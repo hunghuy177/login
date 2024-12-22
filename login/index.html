@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Tài Khoản</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="">
+      <form action="connect.php" method="post">
+        <header>
+          <h1>Đăng Ký Tài Khoản</h1>
+        </header>
+
+        <label class="size18px">TÊN NGƯỜI DÙNG</label>
+        <div>
+          <div></div>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            class="shadow-input-box"
+            placeholder="Tối đa 128 ký tự!"
+            required
+          />
+          <div></div>
+
+          <label for="email">Email</label>
+          <div></div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="shadow-input-box"
+            placeholder="Nhập email hợp lệ"
+            required
+          />
+          <div></div>
+
+          <label for="password">Mật Khẩu</label>
+          <div></div>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="shadow-input-box"
+            placeholder="Nhập mật khẩu"
+            required
+          />
+        </div>
+
+        <label> <input type="checkbox" /> Ghi nhớ tôi </label>
+
+        <div>
+          <!-- Change input type from button to submit to trigger form submission -->
+          <button type="submit" class="pad10px border2px borrad5px">
+            Đăng Kí
+          </button>
+          <a href="#">Đã có tài khoản? Nhấn vào đây để đăng nhập!</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
